@@ -28,6 +28,7 @@
   <ProjectSessionItem path="ble_app_uart_pca10040_s132;ble_app_uart_pca10040_s132;Board Support"/>
   <ProjectSessionItem path="ble_app_uart_pca10040_s132;ble_app_uart_pca10040_s132;Device"/>
   <ProjectSessionItem path="ble_app_uart_pca10040_s132;ble_app_uart_pca10040_s132;nRF_BLE"/>
+  <ProjectSessionItem path="ble_app_uart_pca10040_s132;ble_app_uart_pca10040_s132;nRF_BLE_Services"/>
   <ProjectSessionItem path="ble_app_uart_pca10040_s132;ble_app_uart_pca10040_s132;nRF_Libraries"/>
   <ProjectSessionItem path="ble_app_uart_pca10040_s132;ble_app_uart_pca10040_s132;nRF_Log"/>
   <ProjectSessionItem path="ble_app_uart_pca10040_s132;ble_app_uart_pca10040_s132;nRF_SoftDevice"/>
@@ -63,17 +64,11 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="724" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="711" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="370" useTextEdit="1" openedFrom="C:/nRF/nRF5_SDK_14.2.0_17b948a/examples/my_examples/ble_app_uart-modified/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/bsp/bsp.c" selected="0" top="340" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="278" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.52c/include/__crossworks.h" selected="0" top="245" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="75" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/device/nrf52810.h" selected="0" top="42" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="139" useTextEdit="1" openedFrom="C:/nRF/nRF5_SDK_14.2.0_17b948a/components/libraries/bsp/bsp.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/timer/app_timer.h" selected="0" top="114" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="108" useTextEdit="1" openedFrom="C:/nRF/nRF5_SDK_14.2.0_17b948a/components/libraries/bsp/bsp.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/bsp/bsp_config.h" selected="0" top="93" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="202" useTextEdit="1" openedFrom="C:/nRF/nRF5_SDK_14.2.0_17b948a/examples/my_examples/ble_app_uart-modified/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/util/nordic_common.h" selected="0" top="185" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="107" useTextEdit="1" openedFrom="C:/nRF/nRF5_SDK_14.2.0_17b948a/examples/my_examples/ble_app_uart-modified/main.c" useBinaryEdit="0" left="0" path="../../../../ble_app_uart-working/main.c" selected="0" top="90" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="81" useTextEdit="1" openedFrom="C:/nRF/nRF5_SDK_14.2.0_17b948a/examples/my_examples/ble_app_uart-working/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/ble/ble_services/ble_nus/ble_nus.h" selected="0" top="72" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="982" useTextEdit="1" openedFrom="C:/nRF/nRF5_SDK_14.2.0_17b948a/components/libraries/bsp/bsp.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/timer/app_timer.c" selected="0" top="965" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/nRF/nRF5_SDK_14.2.0_17b948a/examples/my_examples/ble_app_uart-modified/main.c" useBinaryEdit="0" left="0" path="C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.52c/include/string.h" selected="0" top="57" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="26" y="550" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="537" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="933" useTextEdit="1" openedFrom="C:/Projects/Armature/Armature_joint/SDKs/nRF5_SDK_14.2.0_17b948a/examples/my_examples/ble_app_uart-modified/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/timer/app_timer.c" selected="0" top="918" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="312" useTextEdit="1" openedFrom="C:/Projects/Armature/Armature_joint/SDKs/nRF5_SDK_14.2.0_17b948a/examples/my_examples/ble_app_uart-modified/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/ble/ble_services/ble_nus/ble_nus.c" selected="0" top="299" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="612" useTextEdit="1" openedFrom="C:/Projects/Armature/Armature_joint/SDKs/nRF5_SDK_14.2.0_17b948a/examples/my_examples/ble_app_uart-modified/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/softdevice/s132/headers/nrf_soc.h" selected="0" top="584" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="113" useTextEdit="1" openedFrom="C:/Projects/Armature/Armature_joint/SDKs/nRF5_SDK_14.2.0_17b948a/examples/my_examples/ble_app_uart-modified/main.c" useBinaryEdit="0" left="0" path="../../../../../../components/libraries/uart/app_uart.h" selected="0" top="91" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ble_app_uart_pca10040_s132" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="ble_app_uart_pca10040_s132" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

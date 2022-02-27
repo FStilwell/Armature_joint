@@ -52,6 +52,7 @@
 
 #include <stdint.h>
 #include <string.h>
+#include <stdio.h> 
 #include "nordic_common.h"
 #include "nrf.h"
 #include "ble_hci.h"
@@ -79,8 +80,11 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
+//***Area for variables foreign to the original program***
 APP_TIMER_DEF(test_timer_id);
 #define test_delay                      200
+
+uint8_t data_array[5] = {'h','e','l','l','o'};
 
 #define APP_BLE_CONN_CFG_TAG            1                                           /**< A tag identifying the SoftDevice BLE configuration. */
 
@@ -681,8 +685,6 @@ static void power_manage(void)
 //Function for testing a timer handler
 static void test_timer_handler(void * p_context)
 {
-    static uint8_t data_array[5] = {'h','e','l','l','o'};
-    static uint8_t index = 0;
     uint32_t       err_code;
     
     UNUSED_PARAMETER(p_context);
@@ -721,20 +723,24 @@ int main(void)
     advertising_init();
     conn_params_init();
 
-    printf("\r\nUART Start!\r\n");
-    NRF_LOG_INFO("UART Start!");
+    printf("\r\nUART printf Start!\r\n");
+    NRF_LOG_INFO("UART log Start!");
     err_code = ble_advertising_start(&m_advertising, BLE_ADV_MODE_FAST);
     APP_ERROR_CHECK(err_code);
 
-    err_code =
-	   app_timer_create(&test_timer_id, APP_TIMER_MODE_SINGLE_SHOT, test_timer_handler);
-
+    //err_code =
+	   //app_timer_create(&test_timer_id, APP_TIMER_MODE_SINGLE_SHOT, test_timer_handler);
+    
+    //testing the repeated timer mode (the timer should restart each time it expires)
+    err_code = app_timer_create(&test_timer_id, APP_TIMER_MODE_REPEATED, test_timer_handler);
+    
+    //Start the timer
+    err_code = app_timer_start(test_timer_id, APP_TIMER_TICKS(test_delay), NULL);
 
 
     // Enter main loop.
     for (;;)
-    {
-        err_code       = app_timer_start(test_timer_id, APP_TIMER_TICKS(test_delay), NULL);
+    {  
         UNUSED_RETURN_VALUE(NRF_LOG_PROCESS());
         power_manage();
     }
