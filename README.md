@@ -23,6 +23,8 @@ A document with the test info for each of the boards is found under the PCB/Boar
 
 ### Software
 
+More details on the software can be found in the project report under the "5. Project Design/methodology" section.
+
 The software that I worked on is found under SDKs/nRF5_SDK_14.2.0_17b948a/examples/my_examples. They are Segger Embedded Studio project files. There are two programs that I think might be useful which are the blinky projects below.
 
 A blink program is found under SDKs/nRF5_SDK_14.2.0_17b948a/examples/my_examples/Armature_joint_blinky_4-working/
